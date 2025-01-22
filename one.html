@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Filter</title>
+    <link rel="stylesheet" href="one.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Product Filter</h1>
+        <div class="filter">
+            <label for="category">Filter by Category:</label>
+            <select id="category" onchange="filterProducts()">
+                <option value="all">All</option>
+                <option value="electronics">Electronics</option>
+                <option value="furniture">Furniture</option>
+                <option value="clothing">Clothing</option>
+            </select>
+        </div>
+        <div class="product-list">
+            <div class="product" data-category="electronics">
+                <h2>Smartphone</h2>
+                <p>Latest model with high performance.</p>
+            </div>
+            <div class="product" data-category="furniture">
+                <h2>Sofa</h2>
+                <p>Comfortable and stylish sofa.</p>
+            </div>
+            <div class="product" data-category="clothing">
+                <h2>T-shirt</h2>
+                <p>100% cotton and available in multiple colors.</p>
+            </div>
+            <div class="product" data-category="electronics">
+                <h2>Laptop</h2>
+                <p>Powerful laptop with long battery life.</p>
+            </div>
+            <div class="product" data-category="furniture">
+                <h2>Dining Table</h2>
+                <p>Spacious and elegant dining table.</p>
+            </div>
+        </div>
+    </div>
+    <script src="one.js"></script>
+</body>
+</html>
